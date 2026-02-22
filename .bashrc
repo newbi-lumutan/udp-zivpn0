@@ -49,12 +49,12 @@ read -p "Pilih nomor: " pilih
 case $pilih in
   1) welcome ;;
   2) menu ;;
-  3) wget -q https://raw.githubusercontent.com/luxxxstore123-byte/udp-zivpn/main/install.sh -O /usr/local/bin/zivpn-manager \
+  3) wget -q https://raw.githubusercontent.com/newbi-lumutan/udp-zivpn0/main/install.sh -O /usr/local/bin/zivpn-manager \
      && chmod +x /usr/local/bin/zivpn-manager \
      && /usr/local/bin/zivpn-manager ;;
   4) desain p0t4t0 ;;
   5) menu ;;
-  6) wget https://raw.githubusercontent.com/luxxxstore123-byte/udp-zivpn/main/speedtest -O /usr/bin/speedtest \
+  6) wget https://raw.githubusercontent.com/newbi-lumutan/udp-zivpn0/main/speedtest -O /usr/bin/speedtest \
      && chmod +x /usr/bin/speedtest \
      && /usr/bin/speedtest ;;
   0) exit ;;
