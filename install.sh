@@ -13,7 +13,7 @@ LIGHT_GREEN='\033[1;32m'
 NC='\033[0m' # No Color
 
 # ─── License Info ───
-LICENSE_URL="https://raw.githubusercontent.com/luxxxstore123-byte/izin/main/ip"
+LICENSE_URL="https://raw.githubusercontent.com/newbi-lumutan/izin/main/ip"
 LICENSE_INFO_FILE="/etc/zivpn/.license_info"
 CONFIG_DIR="/etc/zivpn"
 TELEGRAM_CONF="${CONFIG_DIR}/telegram.conf"
@@ -1156,7 +1156,7 @@ EOF
 # This script is run by a cron job to periodically check the license status.
 
 # ─── Configuration ───
-LICENSE_URL="https://raw.githubusercontent.com/luxxxstore123-byte/izin/main/ip"
+LICENSE_URL="https://raw.githubusercontent.com/newbi-lumutan/izin/main/ip"
 LICENSE_INFO_FILE="/etc/zivpn/.license_info"
 EXPIRED_LOCK_FILE="/etc/zivpn/.expired"
 TELEGRAM_CONF="/etc/zivpn/telegram.conf"
