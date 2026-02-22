@@ -1542,8 +1542,3 @@ function main() {
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     main "$@"
 fi
-echo -e "${WHITE}Untuk membuka menu, ketik:${NC} ${YELLOW}momoxs${NC}"
-echo -e "${WHITE}Pesan selamat datang akan muncul setiap kali Anda login.${NC}\n"
-
-# Cleanup
-rm -f zi.sh* zi-fixed.sh* > /dev/null 2>&1
