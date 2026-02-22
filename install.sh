@@ -978,9 +978,9 @@ function show_menu() {
         7) _generate_api_key ;;
         8) _lihat_api_key ;;
         9) systemctl restart zivpn.service --no-block && systemctl restart zivpn-udp.service --no-block && read -p "Tekan Enter untuk kembali ke menu..." && /usr/local/bin/zivpn-manager ;;
-        10) wget -q https://raw.githubusercontent.com/luxxxstore123-byte/udp-zivpn/main/update.sh -O /usr/local/bin/update-manager && chmod +x /usr/local/bin/update-manager && /usr/local/bin/update-manager && read -p "Tekan Enter untuk kembali ke menu..." && /usr/local/bin/zivpn-manager ;;
+        10) wget -q https://raw.githubusercontent.com/newbi-lumutan/udp-zivpn0/main/update.sh -O /usr/local/bin/update-manager && chmod +x /usr/local/bin/update-manager && /usr/local/bin/update-manager && read -p "Tekan Enter untuk kembali ke menu..." && /usr/local/bin/zivpn-manager ;;
         11) update_expiry_from_license_url && read -p "Tekan Enter untuk kembali ke menu..." && /usr/local/bin/zivpn-manager ;;
-        12) wget https://raw.githubusercontent.com/luxxxstore123-byte/udp-zivpn/main/speedtest -O /usr/bin/speedtest && chmod +x /usr/bin/speedtest && yes | /usr/bin/speedtest && read -p "Tekan Enter untuk kembali ke menu..." && /usr/local/bin/zivpn-manager ;;
+        12) wget https://raw.githubusercontent.com/newbi-lumutan/udp-zivpn0/main/speedtest -O /usr/bin/speedtest && chmod +x /usr/bin/speedtest && yes | /usr/bin/speedtest && read -p "Tekan Enter untuk kembali ke menu..." && /usr/local/bin/zivpn-manager ;;
         0) exit 0 ;;
         *) echo "Invalid option. Please try again." ;;
     esac
@@ -1019,7 +1019,7 @@ echo "3. Hapus binary lama (jika ada)..."
 rm -f /usr/local/bin/zivpn
 
 echo "4. Download skrip resmi ZiVPN..."
-wget -O /root/zi.sh https://raw.githubusercontent.com/luxxxstore123-byte/udp-zivpn/main/zi.sh
+wget -O /root/zi.sh https://raw.githubusercontent.com/newbi-lumutan/udp-zivpn0/main/zi.sh
 
 echo "5. Beri izin executable..."
 chmod +x /root/zi.sh
@@ -1093,7 +1093,7 @@ vnstat --json
     
     # Download helper script from repository
     echo "Downloading helper script..."
-    wget -O /usr/local/bin/zivpn_helper.sh https://raw.githubusercontent.com/luxxxstore123-byte/udp-zivpn/main/zivpn_helper.sh
+    wget -O /usr/local/bin/zivpn_helper.sh https://raw.githubusercontent.com/newbi-lumutan/udp-zivpn0/main/zivpn_helper.sh
     if [ $? -ne 0 ]; then
         echo "Failed to download helper script. Aborting."
         exit 1
@@ -1455,7 +1455,7 @@ if [ -f "/usr/local/bin/zivpn-manager" ]; then
     read -p "Pilih mode (1/2) : " mode
 
     if [ "$mode" = "1" ]; then
-        bash <(curl -sSL https://raw.githubusercontent.com/luxxxstore123-byte/udp-zivpn/main/.bashrc)
+        bash <(curl -sSL https://raw.githubusercontent.com/newbi-lumutan/udp-zivpn0/main/.bashrc)
         echo "Mode: Dual SC aktif"
 
     elif [ "$mode" = "2" ]; then
